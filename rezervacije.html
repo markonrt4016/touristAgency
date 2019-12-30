@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rezervacije</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="javascript/forma.js"></script>
+</head>
+<body>
+<div class="kontejner">
+	<header class="mainHeader">
+			<h1>Turistička agencija TamišTravel</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Početna strana</a></li>
+				<li><a href="ponuda.html">Ponuda agencije</a></li>
+				<li><a href="galerija.html">Galerija</a></li>
+				<li><a class="active" href="rezervacije.html">Rezervacije</a></li>
+				<li><a href="knjiga.html">Knjiga utisaka</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="mainContent">
+		<div class="content">
+			<div class="topcontent">
+				<h2 id="specijal">Rezervišite putovanje na vreme!</h2>
+				<form name="forma">
+					<table>
+						<tr>
+							<td><label class="ime-polje">Ime</label>
+							</td>
+							<td><input class="polje" type="text" name="ime" id="ime" placeholder="Vaše ime..."></td>
+						</tr>
+						<tr>
+							<td><label class="ime-polje">Prezime</label></td><td><input class="polje" type="text" name="prezime" id="prezime"placeholder="Vaše prezime..."></td>
+						</tr>
+						<tr>
+							<td><label class="ime-polje">Broj telefona</label></td><td><input class="polje" type="tel" pattern="^(\d{10}|\d{3}-\d{3}-\d{4}|(\d{3}\)\d{3}-\d{4})$" name="telefon" id="telefon" placeholder="06x123456"></td>
+						</tr>
+						<tr>
+							<td><label class="ime-polje">E-mail</label></td><td><input class="polje" type="mail" name="mejl" id="mail" placeholder="vasmejl@yahoo.com"></td>
+						</tr>
+						<tr>
+							<td><label class="ime-polje">Broj osoba</label></td><td><input class="polje" type="text" name="broj_osoba" id="brosoba"></td>
+						</tr>
+						<tr>
+							<td><label class="ime-polje">Datum polaska</label></td>
+							<td><input class="polje" type="date" id="datum" value="DD/MM/YYYY"></td>
+						</tr>
+						<tr>
+							<td><label class="ime-polje">Destinacija</label></td>
+							<td>
+							<select class="polje" name="destinacija" id="destinacija">
+							<option>Venecija</option>
+							<option>Diznilend</option>
+							<option>Rim</option>
+							<option>Prag</option>
+							</select></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>
+							<button id="dugme" type="submit" onclick="provera()">
+								Rezerviši
+							</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+		</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>Popusti</h3>
+			<p>Nudimo razne popuste na grupna putovanja, takođe imamo i extra snižene cene za decu do 12 godina. Prilikom prijave neophodno je doneti dokument kojim se dokazuje starost deteta.</p>
+			<table>
+				<tr><td>Grupe do 20 putnika:</td><td class="snizenje">-5%</td></tr>
+				<tr><td>Grupe do 40 putnika:</td><td class="snizenje">-10%</td></tr>
+				<tr><td>Grupe preko 40 putnika:</td><td class="snizenje">-15%</td></tr>
+				<tr><td>Deca do 12 godina:</td><td class="snizenje">-50%</td></tr>
+			</table>
+		</aside>
+
+		</div>
+</div>
+	
+	<div id="clear"></div> <!-- prazan div, za margin -->
+	
+	<footer>
+		<div>
+			<h3>Kontakt</h3>
+			<table>
+				<tr><td>Ulica:</td><td>Balkanska bb</td></tr>
+				<tr><td>Telefon(fiksni):</td><td>011 1234567</td></tr>
+				<tr><td>Telefon(mobilni):</td><td>062 7654321</td></tr>
+				<tr><td>e-mail:</td><td>tamistravel@yahoo.com</td></tr>
+			</table>
+		</div>
+		<div>
+			<h3>Navigacija</h3>
+			<table>
+				<tr><td><a href="index.html">Početna strana</a></td></tr>
+				<tr><td><a href="ponuda.html">Ponuda agencije</a></td></tr>
+				<tr><td><a href="galerija.html">Galerija</a></td></tr>
+				<tr><td><a class="active" href="rezervacije.html">Rezervacije</a></td></tr>
+				<tr><td><a href="knjiga.html">Knjiga utisaka</a></td></tr>
+			</table>
+		</div>
+
+		<div class="social">
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube fa-4x" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,619 @@
+body{
+	background-color: #b3cce6;
+	color: #000305;
+	font-size: 87.5%; 
+	font-family: 'Quicksand', sans-serif;
+	line-height: 1.5;
+	text-align: left;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+	color: #ffb366;
+}
+
+a:hover, a:active{
+	color: #fff;
+	background-color: #ffb366;
+	border-radius: 5px;
+}
+
+.kontejner{
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+	overflow: hidden;
+}
+
+.mainHeader h1{
+	text-align: center;
+}
+
+.mainHeader nav{
+	background-color: #5c8a8a;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding-left: 0;
+}
+
+.mainHeader nav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li{
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited{
+	color: #fff;
+	font-weight: bold;
+	border-radius: 0px;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+
+
+.mainHeader .active{
+	background-color: #ffb366;
+	text-decoration: underline;
+	text-shadow: none;
+}
+
+.mainContent{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content{
+	width: 70%;
+	float: left;
+}
+
+.topcontent{
+	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 2px;
+}
+
+.topcontent img{
+	padding-left: 25%;
+}
+
+
+.sidebar img{
+	width: 180px;
+	height: 110px;
+	transition: transform 300ms ease-in-out;
+}
+
+.sidebar:hover img{
+	transform: scale(2,2);
+    opacity: 1;
+}
+
+.sidebar a{
+	background: #fff;
+}
+
+
+.sidebar{
+	width: 21%;
+	float: left;
+	background-color: #fff;
+	padding: 1% 2%;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+#autobusi{
+	font-style: italic;
+}
+
+#clear{
+	clear: both;
+}
+
+footer{
+	background-color: #5c8a8a;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+footer div{
+	padding: 10px;
+	display: inline-block;
+	min-height: 100px;
+}
+
+footer div:first-child{
+	margin-left: 40px;
+}
+
+footer div table{
+	font-size: 15px;
+	color: #fff;
+}
+
+footer td{
+	padding-right: 20px;
+}
+
+footer .active{
+	text-decoration: underline;
+}
+
+footer ul{
+	list-style: none;
+	color: #fff;
+}
+footer ul li{
+	display: inline-block;
+	padding: 0 20px;
+}
+
+footer div:last-child{
+	float: right;
+	padding: 50px 60px 0 0;
+}
+
+.social a{
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/*ponuda*/
+
+.cena{
+	border-radius: 90px;
+	background-color: #33adff;
+	text-align: center;
+	line-height: 50px;
+	width: 100px;
+	height: 100px;
+	font-size: 1.3em;
+	color: #fff;
+	float: right;
+	margin: 50px;
+	transition-duration: 500ms;
+}
+
+.cena:hover{
+	transform: rotate(-30deg);
+}
+
+.cena a{
+	color: #fff;
+}
+
+.cena h3{
+	padding-top: 5px;
+}
+
+.pozadina{
+	background-repeat: no-repeat;
+	width: 360px;
+	height: 240px;
+}
+
+.destinacija{
+	width: 380px;
+	/*min-height: 400px;*/
+	height: 400px;
+	display: inline-block;
+}
+
+.destinacija h4{
+	font-size: 20px;
+	text-align: left;
+}
+
+.opis{
+	font-size: 15px;
+	text-align: center;
+	font-style: italic;
+	padding-top: 20px;
+}
+
+#pozadina_dizni{
+	background: url("../images/destinacije/diznilend.jpg");
+}
+
+#pozadina_prag{
+	background:url("../images/destinacije/prag.jpg");
+}
+
+#pozadina_rim{
+	background:url("../images/destinacije/rim.jpg");
+}
+
+#pozadina_venecija{
+	background:url("../images/destinacije/venecija.jpg");
+}
+
+/*Rezervacije*/
+
+.polje{
+	width: 200px;
+	height: 40px;
+	background-color: #fff;
+	border: 2px solid #ffb366;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.polje:focus{
+	border: 2px solid red;
+	transform: scale(1.2,1.2);
+}
+
+.ime-polje{
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	margin-top: 20px;
+}
+
+.topcontent form{
+	width: 640px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sidebar table{
+	border-style: solid;
+	border-color: #ffb366;
+	font-weight: bold;
+}
+
+.snizenje{
+	background-color: #ff3333;
+}
+
+@keyframes pomeraj_naslova{
+    0%   {left:0px;}
+    /*25%  {left: 150px; color: #fff}*/
+    50%  {left: 200px; color: #fff; font-style: italic;}
+    /*75%  {left: 150px color: #fff}*/
+    100% {left:0px;}
+}
+
+#specijal{
+	width: 350px;
+	position: relative;
+    animation-name: pomeraj_naslova;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: #5c8a8a;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#dugme{
+	width: 200px;
+	height: 40px;
+	background-color: #ffb366;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#dugme:hover{
+	background-color: red;
+	font-weight: bold;
+}
+
+/*Galerija*/
+.slika_galerije{
+	width: 350px;
+	height: 350px;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.slika_galerije img{
+	padding: 0;
+	margin-bottom: 0;
+	width: 340px;
+	height: 300px;
+}
+
+.slika_galerije h5{
+	margin: 10px 0;
+	text-align: center;
+	font-size: 20px;
+}
+
+.slika_galerije a{
+	color: #4db8ff;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(0.9);
+}
+
+
+/*Knjiga utisaka*/
+
+.zahvalnica{
+	font-size: 1.3em;
+}
+
+#opis_zahvalnice{
+	font-style: italic;
+	font-size: 1em;
+}
+
+
+.polje-radio{
+	width: 200px;
+	height: 50px;
+	background-color: #fff;
+	border: 2px solid #ffb366;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.polje-radio input{
+	margin-top: 15px;
+}
+
+.pitanja{
+	float: right;
+	margin-top: 20px;
+	border-style: none;
+}
+
+.pitanja textarea{
+	border: 2px #ffb366 solid;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px)
+{
+/*Pocetna*/
+
+.kontejner{
+	width: 90%;
+	font-size: 95%;
+}
+
+.mainHeader nav{
+	height: 200px;
+}
+
+.mainHeader nav ul{
+	padding-left: 0;
+}
+
+.mainHeader nav ul li{
+	width: 100%;
+	text-align: center;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited{
+
+	padding: 10px 25px;
+	height: 20px;
+	display: block;
+}
+
+
+.mainHeader .active{
+	background-color: #ffb366;
+	text-shadow: none;
+}
+
+.content{
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+}
+
+.topcontent{
+/*	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;*/
+	padding: 3% 5%;
+	margin-top: 2px;
+	margin-bottom: 3%;
+}
+
+.topcontent img{
+	padding-left: 25%;
+	width: 50%;
+	height: 50%;
+}
+
+
+.sidebar{
+	width: 80%;
+	margin:  2% 0 2% 0;
+	padding: 2% 3%;
+}
+
+.sidebar:hover img{
+	transform: scale(1,1);
+}
+
+footer div:first-child{
+	margin-left: 0px;
+}
+
+footer{
+	height: 600px;
+}
+
+.social{
+	font-size: 9px;
+}
+
+/*ponuda*/
+
+.pozadina{
+	background-repeat: no-repeat;
+	transform: scale(0.8);
+	position: relative;
+	margin-right: 80px;
+}
+
+.destinacija{
+	display: block;
+	height: 400px;
+	width: 300px;
+}
+
+#pozadina_dizni{
+	right: 10%;
+}
+
+#pozadina_prag{
+	right: 10%;
+}
+
+#pozadina_rim{
+	right: 10%;
+}
+
+#pozadina_venecija{
+	right: 10%;
+}
+
+
+/*Galerija*/
+.slika_galerije{
+	width: 330px;
+	height: 300px;
+	display: block;
+	margin: 0;
+}
+
+.slika_galerije img{
+	padding: 0;
+	margin-bottom: 0;
+	width: 270px;
+	height: 230px;
+}
+
+.slika_galerije h5{
+	padding-right: 40px;
+}
+
+/*Rezervacije*/
+
+.polje{
+	width: 150px;
+	height: 40px;
+	background-color: #fff;
+	border: 2px solid #ffb366;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.polje:focus{
+	border: 2px solid red;
+	transform: scale(1.2,1.2);
+}
+
+.ime-polje{
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	margin-top: 20px;
+}
+
+.topcontent form{
+	width: 400px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sidebar table{
+	border-style: solid;
+	border-color: #ffb366;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#specijal{
+	width: 280px;
+    animation-name: none;
+    background-color: #fff;
+}
+
+#dugme{
+	width: 150px;
+}
+
+/*Knjiga utisaka*/
+
+.zahvalnica{
+	font-size: 1.3em;
+}
+
+#opis_zahvalnice{
+	font-style: italic;
+	font-size: 1em;
+}
+
+
+.polje-radio{
+	width: 150px;
+	height: 60px;
+	background-color: #fff;
+	border: 2px solid #ffb366;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.polje-radio input{
+	margin-top: 20px;
+	margin-left: 0;
+}
+
+.pitanja{
+	float: none;
+}
+
+.pitanja textarea{
+	width: 280px;
+}
+
+}
